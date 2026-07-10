@@ -1,8 +1,10 @@
-root {
-    --bg: #0d0d0f;
+:root {
+    --bg: #0a0b10;
+    --abg1: #4facfe;
+    --abg2: #00f2fe;
+    --abg3: #f093fb;
     --text: #f4f4f5;
     --text-muted: #8a8f98;
-    --accent: #c0a0ff;
 }
 *{
     margin: 0;
@@ -12,4 +14,31 @@ root {
 html,body{
     width: 100%;
     height: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
+}
+#hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.abg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(150px);
+    width= 45vw;
+    height= 45vw;
+    
 }
