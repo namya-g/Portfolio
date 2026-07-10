@@ -1,0 +1,15 @@
+root {
+    --bg: #0d0d0f;
+    --text: #f4f4f5;
+    --text-muted: #8a8f98;
+    --accent: #c0a0ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
