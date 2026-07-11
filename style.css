@@ -6,6 +6,18 @@
     --text: #f4f4f5;
     --text-muted: #8a8f98;
 }
+body.light {
+    --bg: #f8f9fa;
+    --text: #1a1a1a;
+}
+body.light .glass {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+body, .glass {
+    transition: background 0.5s ease,color 0.5s ease;
+}
 *{
     margin: 0;
     padding: 0;
@@ -86,4 +98,20 @@ section {
     gap: 2rem;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 
+}
+.jump {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin: 
+}
+#buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
 }

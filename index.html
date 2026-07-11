@@ -7,12 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    </head>
-    <body>
+</head>
+<body>
+    <button id="mode" style="position:fixed; top:20px; right:20px; z-index:1000; padding:10px 15px; border-radius:50px; border:none; background:var(--text); color:var(--bg); font-family:inherit; font-weight:bold;">
+        Toggle Theme ☀️
+    </button>
     <div class="abg">
         <div class="orb orb1"></div>
         <div class="orb orb2"></div>
@@ -22,22 +25,34 @@
         <h1>Hey Folks!</h1>
         <h2>I am Namya Gupta.</h2>
         <h2><span id="typing"></span></h2>
-        <a href="#about">Know me</a>
-        <a href="#projects">View my work</a>
-        <a href="#contact">Contact me</a>
+        <div id="buttons">
+            <span><a class="jump" href="#about">Know me</a></span>
+            <span><a class="jump" href="#projects">View my work</a></span>
+            <span><a class="jump" href="#contact">Contact me</a></span>
+        </div>
     </section>
     <section id="about" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>Know me</h2>
-        <p>bio</p>
+        <p>Hi, I'm Namya, a second-year Computer Science and Information Technology (CSIT) engineering student with a passion for learning,
+            building, and solving problems through technology. I enjoy turning ideas into interactive and user-friendly web
+            applications while continuously improving my programming skills.
+            <br><br>
+            I have experience with C, Python, HTML, CSS, and JavaScript, and I'm currently focused on strengthening my
+            understanding of software development by building practical projects and exploring modern web technologies. I
+            believe the best way to learn is by creating, so I enjoy challenging myself with new projects that help me grow as a
+            developer.
+            <br><br>
+            I'm always eager to learn, collaborate, and take on opportunities that help me grow both personally and
+            professionally.</p>
     </section>
     <section id="projects" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>My work</h2>
         <div id="project-box">
-            <div id="weather-app" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div id="weather-app" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
                 <h3>Weather App</h3>
                 <p>description</p>
             </div>
-            <div id="sudoku-game" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="200">
+            <div id="sudoku-game" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="200" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
                 <h3>Sudoku Game</h3>
                 <p>description</p>
             </div>
@@ -45,8 +60,11 @@
     </section>
     <section id="contact" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>Let's Connect</h2>
-        <a href="">LinkedIn</a>
+        <a href="https://github.com/namya-g">GitHub</a>
+        <a href="http://linkedin.com/in/namya-gupta-544189418">LinkedIn</a>
     </section>
+    <br><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <script>
         const lenis=new Lenis({
@@ -56,7 +74,7 @@
             smoothTouch: false,
         });
         function raf(time) {
-            lenis,raf(time);
+            lenis.raf(time);
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
@@ -64,7 +82,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var text=new Typed('#typing', {
-            strings: ["I am a CSIT engineering student and a tech enthusiast."],
+            strings: ["Engineer in Progress.<br>Turning Curiosity into Code.<br>Learning by Building.<br>Creative Problem Solver."],
             typeSpeed: 80,
             showCursor: true,
             cursorChar: '|'
@@ -73,6 +91,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
          AOS.init();
+    </script>
+    <script>
+        const theme=document.getElementById('mode');
+        theme.addEventListener('click',()=> {
+            document.body.classList.toggle('light');
+            if(document.body.classList.contains('light'))
+        {
+            theme.innerText='🌙';
+        }
+        else
+        {
+            theme.innerText='☀️';
+        }
+        });
     </script>
 </body>
 </html>
