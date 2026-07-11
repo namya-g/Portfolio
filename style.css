@@ -108,10 +108,28 @@ section {
     border-radius: 50px;
     transition: all 0.3s ease;
     width: fit-content;
-    margin: 
 }
 #buttons {
-    margin: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
+}
+.connect {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    color: var(--text);
+}
+.connect:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translate(-3px);
+}
+body.light .connect {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
