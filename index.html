@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </head>
+    <body>
     <div class="abg">
         <div class="orb orb1"></div>
         <div class="orb orb2"></div>
@@ -15,31 +21,58 @@
     <section id="top">
         <h1>Hey Folks!</h1>
         <h2>I am Namya Gupta.</h2>
-        <h2>I am a CSIT engineering student and a tech enthusiast.</h2>
+        <h2><span id="typing"></span></h2>
         <a href="#about">Know me</a>
         <a href="#projects">View my work</a>
         <a href="#contact">Contact me</a>
     </section>
-    <section id="about" class="glass">
+    <section id="about" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>Know me</h2>
         <p>bio</p>
     </section>
-    <section id="projects">
+    <section id="projects" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>My work</h2>
         <div id="project-box">
-            <div id="weather-app">
+            <div id="weather-app" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
                 <h3>Weather App</h3>
                 <p>description</p>
             </div>
-            <div id="sudoku-game" class="glass">
+            <div id="sudoku-game" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="200">
                 <h3>Sudoku Game</h3>
                 <p>description</p>
             </div>
         </div>
     </section>
-    <section id="contact" class="glass">
+    <section id="contact" class="glass" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h2>Let's Connect</h2>
         <a href="">LinkedIn</a>
     </section>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script>
+        const lenis=new Lenis({
+            duration: 1.2,
+            easing: (t)=>Math.min(1,1.001-Math.pow(2,-10*t)),
+            smoothWheel: true,
+            smoothTouch: false,
+        });
+        function raf(time) {
+            lenis,raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var text=new Typed('#typing', {
+            strings: ["I am a CSIT engineering student and a tech enthusiast."],
+            typeSpeed: 80,
+            showCursor: true,
+            cursorChar: '|'
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
 </body>
 </html>
