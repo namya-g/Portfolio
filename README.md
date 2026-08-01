@@ -1,5 +1,4 @@
-# Portfolio
-# Personal Developer Portfolio
+# Personal Portfolio
 
 A modern, highly interactive personal portfolio website built to showcase my projects, technical skills, and creative work. 
 
