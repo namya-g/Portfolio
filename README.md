@@ -8,7 +8,7 @@ Designed with a focus on UI/UX, this portfolio features a custom glassmorphism a
 
 * **Light & Dark Mode:** Fully custom theme toggling (featuring a deep dark mode and a pastel pink light mode) that dynamically updates UI elements and glass textures.
 * **Dynamic Roaming Background:** Pure CSS animated background blobs that continuously travel across the viewport using distinct keyframe timelines.
-* **Glassmorphism UI:** Frosted glass effect applied to project cards, tech stack containers, and social buttons using `backdrop-filter`.
+* **Glassmorphism UI:** Frosted glass effect applied to project cards, tech stack containers, and social buttons.
 * **3D Micro-interactions:** Project cards feature physics-based 3D tilt effects on mouse hover.
 * **Live Typing Effects:** Animated, multi-line hero text to introduce my background and work.
 * **Smooth Scrolling:** Physics-based smooth scroll implementation for a premium browsing experience.
