@@ -28,4 +28,6 @@ Designed with a focus on UI/UX, this portfolio features a custom glassmorphism a
 * [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - For scroll-triggered fade animations.
 * [Lenis](https://lenis.studiofreight.com/) - For the buttery-smooth page scrolling.
 
+**View Live Demo here:** https://namya-g.github.io/Portfolio/
+
 ## Running the Project Locally
