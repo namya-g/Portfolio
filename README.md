@@ -1,5 +1,4 @@
-# Portfolio
-# Personal Developer Portfolio
+# Personal Portfolio
 
 A modern, highly interactive personal portfolio website built to showcase my projects, technical skills, and creative work. 
 
@@ -9,7 +8,7 @@ Designed with a focus on UI/UX, this portfolio features a custom glassmorphism a
 
 * **Light & Dark Mode:** Fully custom theme toggling (featuring a deep dark mode and a pastel pink light mode) that dynamically updates UI elements and glass textures.
 * **Dynamic Roaming Background:** Pure CSS animated background blobs that continuously travel across the viewport using distinct keyframe timelines.
-* **Glassmorphism UI:** Frosted glass effect applied to project cards, tech stack containers, and social buttons using `backdrop-filter`.
+* **Glassmorphism UI:** Frosted glass effect applied to project cards, tech stack containers, and social buttons.
 * **3D Micro-interactions:** Project cards feature physics-based 3D tilt effects on mouse hover.
 * **Live Typing Effects:** Animated, multi-line hero text to introduce my background and work.
 * **Smooth Scrolling:** Physics-based smooth scroll implementation for a premium browsing experience.
@@ -28,5 +27,7 @@ Designed with a focus on UI/UX, this portfolio features a custom glassmorphism a
 * [Vanilla-Tilt.js](https://micku7zu.github.io/vanilla-tilt.js/) - For the 3D interactive project cards.
 * [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - For scroll-triggered fade animations.
 * [Lenis](https://lenis.studiofreight.com/) - For the buttery-smooth page scrolling.
+
+**View Live Demo here:** https://namya-g.github.io/Portfolio/
 
 ## Running the Project Locally
